@@ -43,4 +43,5 @@
         here's what that should look like:
 
 ![Screenshot](hello.png)
+![Screenshot](demo.png)
 
