@@ -4,6 +4,7 @@
     /*
 
         minimalist header-only OpenGL text renderer
+
         written 2021 by emogenet@gmail.com
         in the public domain
 
@@ -32,6 +33,10 @@
             }                           \
         } while(0)                      \
 
+    /*
+        for some weird reason, calling gluErrorString in between
+        glBegin/End has nefarious effect on some platforms ...
+     */
     #define GLCHECK2(call)  \
         do {                \
             call;           \
