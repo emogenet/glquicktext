@@ -12,6 +12,8 @@
             - font glyphs are "true" 3D objects and behave well when rendered in 3D environments
 
         less neat:
+            - no unicode
+            - no funky looking chars, just basic ASCII
             - "traditional" OpenGL code ... uses glVertex a lot
             - therefore: speed is OK but geometry buffers it ain't
             - you don't get to choose the font: you get a monospaced, courier-like and that's that
