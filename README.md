@@ -40,3 +40,7 @@
 
             examples both require GLFW but glQuickText itself does not
 
+        here's what that should look like:
+
+![alt text](https://github.com/emogenet/glquicktext/blob/master/hello.png?raw=true)
+
