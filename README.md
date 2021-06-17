@@ -42,7 +42,11 @@
 
             examples both require GLFW but glQuickText itself does not
 
-        here's what that should look like:
+        here's what the texture looks like:
+
+![Screenshot](font.png)
+
+        and here's what the running examples should  look like:
 
 ![Screenshot](hello.png)
 ![Screenshot](demo.png)
