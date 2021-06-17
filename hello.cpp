@@ -5,6 +5,9 @@
 
     compile with: c++ -o hello -I. hello.cpp -lglfw -lGLU -lGL
 
+    written 2021 by emogenet@gmail.com
+    in the public domain
+
  */
 
 #include <GLFW/glfw3.h>

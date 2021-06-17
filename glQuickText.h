@@ -1,7 +1,13 @@
 #ifndef __glQuickText_H__
     #define __glQuickText_H__
 
-    // small, simplistic, header-only OpenGL text renderer
+    /*
+
+        minimalist header-only OpenGL text renderer
+        written 2021 by emogenet@gmail.com
+        in the public domain
+
+     */
 
     #include <mutex>     // std::mutex
     #include <GL/gl.h>   // opengl stuff

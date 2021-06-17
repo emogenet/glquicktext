@@ -1,9 +1,13 @@
 /*
+
     glQuickText demo
 
     requires GLFW : www.glfw.org
 
     compile with: c++ -o demo -I. demo.cpp -lglfw -lGLU -lGL -lm
+
+    written 2021 by emogenet@gmail.com
+    in the public domain
 
  */
 
