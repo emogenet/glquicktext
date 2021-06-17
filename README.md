@@ -22,6 +22,7 @@
             - renders glyphs as individual, transparent, textured quads
             - uses a densely packed 256x256 lum+alpha texture (inlined in .h file)
             - in particular, the rendered string behaves reasonably wrt current transform / shading stack
+            - glQuickText is very useful for quickly annotating 3D scenes and/or debugging computational geometry code
 
         basic use:
 
