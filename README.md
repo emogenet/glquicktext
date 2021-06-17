@@ -1,15 +1,27 @@
 # glquicktext
 
     glQuickText is an OpenGL text renderer with the following attributes:
-        - C++14
-        - "traditional" OpenGL
-        - header-only (one .h file )
-        - has almost no dependencies (C++ std lib, C std lib)
-        - fixed font: monospaced, courier-like
-        - renders glyphs as individual, transparent, textured quads
-        - uses a densely packed 256x256 lum+alpha texture (inlined in .h file)
-        - computes the bounding box of a rendered string
-        - straightforward printf-like API:
+
+        neat:
+            - C++14
+            - header-only (one .h file)
+            - straightforward printf-like API
+            - very few dependencies: C++ std lib, C std lib
+            - it might even compile on windows, who knows...
+            - can compute the bounding box of a rendered string
+            - font glyphs are "true" 3D objects and behave well when rendered in 3D environments
+
+        less neat:
+            - "traditional" OpenGL code ... uses glVertex a lot
+            - therefore: speed is OK but geometry buffers it ain't
+            - you don't get to choose the font: you get a monospaced, courier-like and that's that
+
+        good to know:
+            - renders glyphs as individual, transparent, textured quads
+            - uses a densely packed 256x256 lum+alpha texture (inlined in .h file)
+            - in particular, the rendered string behaves reasonably wrt current transform / shading stack
+
+        basic use:
 
             glQuickText::printfAt(
                 xPos,
@@ -21,10 +33,10 @@
                 sin(234.0)
             );
 
-    two examples are provided:
+        two examples are provided:
 
-        hello.cpp   :   very basic use of glQuickText
-        demo.cpp    :   shows off more advanced uses of glQuickText
+            hello.cpp   :   shows very basic use of glQuickText
+            demo.cpp    :   shows more advanced uses of glQuickText
 
-        examples both require GLFW but glQuickText does not
+            examples both require GLFW but glQuickText itself does not
 

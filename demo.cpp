@@ -378,7 +378,11 @@ int main(
     int,
     char *[]
 ) {
+    // run demo
     show();
+
+    // make some noise before leaving
+    printf("exited cleanly\n");
     return 0;
 }
 

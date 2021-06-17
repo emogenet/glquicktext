@@ -82,7 +82,7 @@ int main(
     // clean up
     glfwTerminate();
 
-    // make some noise
+    // make some noise before leaving
     printf("exited cleanly\n");
     return 0;
 }
